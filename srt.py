@@ -1,6 +1,7 @@
 #PATH = "draft_content.json"
 PATH = r"C:\Users\23027\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\202202011537\draft_content.json"
 import json
+import datetime
 
 
 def srttime(t):
@@ -44,7 +45,14 @@ with open(PATH, "r", encoding="utf-8") as f:
     f.close()
 
 
-with open("1.srt", "w", encoding="utf-8") as f:
+with open(
+    datetime.datetime.now().strftime("%F")
+    + "-"
+    + datetime.datetime.now().strftime("%T").replace(":", "-")
+    + ".srt",
+    "w",
+    encoding="utf-8",
+) as f:
     for num in range(len(time[1])):
         start = int(int(time[1]["segments"][num]["target_timerange"]["start"]) / 1000)
         duration = int(
