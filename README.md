@@ -4,13 +4,13 @@
 
 ### 设置路径
 
-Windows剪映专业版自动生成的字幕文件一般在
+找到`draft_content.json`在哪里
 
-```
-C:\Users\xxx\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\xxx\draft_content.json
-```
+<img src="Snipaste_2022-02-18_14-33-13.png" alt="Snipaste_2022-02-18_14-33-13" width=900 />
 
-使用前请用记事本之类的打开`srt.py`，修改`PATH = r"修改r和双引号里面的内容"`，保存退出
+<img src="Snipaste_2022-02-18_14-33-25.png" alt="Snipaste_2022-02-18_14-33-25" width=300 />
+
+使用前请用记事本之类的打开`srt.py`，修改`PATH = r"修改r和双引号里面的内容"`，修改为`draft_content.json`所在的路径，保存退出
 
 #### 绝对路径
 
