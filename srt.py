@@ -53,7 +53,7 @@ with open(
     "w",
     encoding="utf-8",
 ) as f:
-    for num in range(len(time[1])):
+    for num in range(len(text)):
         start = int(int(time[1]["segments"][num]["target_timerange"]["start"]) / 1000)
         duration = int(
             int(time[1]["segments"][num]["target_timerange"]["duration"]) / 1000
